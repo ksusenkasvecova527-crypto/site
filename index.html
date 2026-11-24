@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ксения Швецова — репетитор по математике</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Georgia, serif;
+      line-height: 1.6;
+      color: #2b2b2b;
+      background: #faf8f4;
+    }
+
+    /* Меню */
+    nav {
+      position: sticky;
+      top: 0;
+      background: #2e4057;
+      padding: 14px 10px;
+      text-align: center;
+      z-index: 100;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 17px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #f4b942;
+    }
+
+    section {
+      padding: 60px 10%;
+      scroll-margin-top: 65px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #2e4057;
+    }
+
+    /* Главная */
+    #home {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(135deg, #2e4057, #4f6d8f);
+      color: #fff;
+    }
+
+    #home h1 {
+      font-size: 2.8em;
+      margin-bottom: 14px;
+    }
+
+    #home p {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 12px 32px;
+      background: #f4b942;
+      color: #2e4057;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #e0a52e;
+    }
+
+    /* Галерея */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 8px;
+      display: block;
+      transition: transform 0.3s;
+      background: #e5ded2;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    /* Тарифы */
+    .prices {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #e5ded2;
+      border-radius: 10px;
+      padding: 24px;
+      width: 260px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #2e4057;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      margin-bottom: 10px;
+    }
+
+    /* Форма */
+    form {
+      max-width: 440px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    input,
+    textarea {
+      padding: 12px;
+      border: 1px solid #bbb;
+      border-radius: 6px;
+      font-size: 15px;
+      font-family: Georgia, serif;
+      width: 100%;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      padding: 12px;
+      background: #2e4057;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #4f6d8f;
+    }
+
+    .msg-ok {
+      color: #2e7d32;
+      text-align: center;
+    }
+
+    .msg-err {
+      color: #c62828;
+      text-align: center;
+    }
+
+    /* Футер */
+    footer {
+      background: #2e4057;
+      color: #d9e2ec;
+      text-align: center;
+      padding: 30px 10%;
+    }
+
+    footer a {
+      color: #f4b942;
+      text-decoration: none;
+    }
+
+    footer p {
+      margin-bottom: 8px;
+    }
+
+    .socials svg {
+      width: 34px;
+      height: 34px;
+      margin: 12px 8px 0;
+      vertical-align: middle;
+    }
+
+    /* Адаптивность */
+    max-width: 700px {
+      section {
+        padding: 40px 6%;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 6px 10px;
+        font-size: 15px;
+      }
+
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .gallery img {
+        height:
+
+
+Box="0 0 24 24" fill="#f4b942">
+          <path d="M12.7 17.3c-5.6 0-8.8-3.8-8.9-10.1h2.8c.1 4.6 2.1 6.5 3.7 6.9V7.2h2.7v4.1c1.6-.2 3.2-2 3.9-4.1h2.6c-.4 2.6-2.2 4.4-3.4 5.2 1.3.6 3.3 2.2 4.1 4.9h-2.9c-.6-2-2.2-3.5-4.3-3.7v3.7h-.3z"/>
+        </svg>
+      </a>
+
+      <a
+        href="https://t.me/ваш_ник"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Telegram"
+      >
+        <svg viewBox="0 0 24 24" fill="#f4b942">
+          <path d="M21.9 4.6 18.8 19c-.2 1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.3-.1-.5-.6-.2L6.4 12.3l-4.8-1.5c-1-.3-1-1 .2-1.5l18.7-7.2c.8-.3 1.6.2 1.4 2.5z"/>
+        </svg>
+      </a>
+
+    </div>
+
+  </footer>
+
+  <!-- Проверка формы -->
+  <script>
+    document.getElementById('feedback').addEventListener(
+      'submit',
+      function (e) {
+
+        e.preventDefault();
+
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        const out = document.getElementById('form-msg');
+
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!name || !email || !message) {
+
+          out.textContent = 'Заполните все поля.';
+          out.className = 'msg-err';
+
+        } else if (!emailPattern.test(email)) {
+
+          out.textContent = 'Введите корректный Email.';
+          out.className = 'msg-err';
+
+        } else {
+
+          out.textContent =
+            'Спасибо, ' + name + '! Скоро свяжусь с вами.';
+
+          out.className = 'msg-ok';
+
+          this.reset();
+        }
+
+      }
+    );
+  </script>
+
+</body>
+</html> 220p
+Telegram – a new era of messaging
+Telegram – a new era of messaging
+telegram.org
+
+
+x;
+      }
+
+      #home h1 {
+        font-size: 2em;
+      }
+    }
+
+    max-width: 420px {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery img {
+        height: 250px;
+      }
+
+      #home h1 {
+        font-size: 1.7em;
+      }
+
+      .card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Навигационное меню -->
+  <nav>
+    <a href="#home">Главная</a>
+    <a href="#about">Обо мне</a>
+    <a href="#lessons">Занятия</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+
+  <!-- Главная -->
+  <section id="home">
+    <div>
+      <h1>Ксения Швецова</h1>
+
+      <p>
+        Репетитор по математике. Готовлю к ОГЭ, ЕГЭ
+        и помогаю догнать школьную программу
+        без слёз и зубрёжки.
+      </p>
+
+      <a class="btn" href="#contacts">
+        Записаться на занятие
+      </a>
+    </div>
+  </section>
+
+  <!-- Обо мне -->
+  <section id="about">
+    <h2>Обо мне</h2>
+
+    <p>
+      Окончила математический факультет, шесть лет занимаюсь
+      частной практикой. Верю, что математика — это не про
+      «родить формулу», а про умение думать: поэтому на занятиях
+      мы разбираем задачи до сути, а не учим решения наизусть.
+      Со слабыми учениками начинаем с базовых тем и спокойно,
+      шаг за шагом, подходим к нужному уровню. С сильными —
+      выходим за пределы школьной программы и готовимся
+      к олимпиадам. Онлайн или у меня дома в районе метро
+      «Пионерская».
+    </p>
+  </section>
+
+  <!-- Занятия -->
+  <section id="lessons">
+
+    <h2>Формат занятий</h2>
+
+    <div class="prices">
+
+      <div class="card">
+        <h3>ОГЭ</h3>
+        <p>
+          Разбор всех типов заданий, работа с типичными
+          ошибками, пробные экзамены.
+        </p>
+        <p><b>1200 ₽ / час</b></p>
+      </div>
+
+      <div class="card">
+        <h3>ЕГЭ (профиль)</h3>
+        <p>
+          Вторая часть, задачи с параметром, стратегия
+          распределения времени на экзамене.
+        </p>
+        <p><b>1500 ₽ / час</b></p>
+      </div>
+
+      <div class="card">
+        <h3>5–9 класс</h3>
+        <p>
+          Восполнение пробелов, помощь с домашними заданиями,
+          уверенность в предмете.
+        </p>
+        <p><b>900 ₽ / час</b></p>
+      </div>
+
+    </div>
+
+    <h2 style="margin-top: 50px;">
+      Как проходят занятия
+    </h2>
+
+    <!-- Галерея фотографий -->
+    <div class="gallery">
+
+      <img src="./img/photo1.jpg"
+           alt="Моё рабочее место"
+           onerror="this.alt='Фотография не найдена';">
+
+      <img src="./img/photo2.jpg"
+           alt="Конспект занятия"
+           onerror="this.alt='Фотография не найдена';">
+
+      <img src="./img/photo3.jpg"
+           alt="Разбор задачи у доски"
+           onerror="this.alt='Фотография не найдена';">
+
+      <img src="./img/photo4.jpg"
+           alt="Учебные материалы"
+           onerror="this.alt='Фотография не найдена';">
+
+    </div>
+
+  </section>
+
+  <!-- Контакты -->
+  <section id="contacts">
+
+    <h2>Записаться</h2>
+
+    <p style="text-align: center; margin-bottom: 24px;">
+      Напишите мне — отвечу в течение дня
+      и предложу удобное время.
+    </p>
+
+    <form id="feedback" novalidate>
+
+      <input
+        type="text"
+        id="name"
+        placeholder="Ваше имя"
+        required
+      >
+
+      <input
+        type="email"
+        id="email"
+        placeholder="Email"
+        required
+      >
+
+      <textarea
+        id="message"
+        rows="5"
+        placeholder="Класс ученика и пожелания"
+        required
+      ></textarea>
+
+      <button type="submit">
+        Отправить
+      </button>
+
+      <p id="form-msg"></p>
+
+    </form>
+
+  </section>
+
+  <!-- Футер -->
+  <footer>
+
+    <p>© Ксения Швецова, 2026</p>
+
+    <p>
+      <a href="tel:+79991234567">
+        +7 (999) 123-45-67
+      </a>
+      |
+      <a href="mailto:shvetsova.tutor@mail.ru">
+        shvetsova.tutor@mail.ru
+      </a>
+    </p>
+
+    <!-- Социальные сети -->
+    <div class="socials">
+
+      <a
+        href="https://vk.com/ваш_профиль"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="VK"
+      >
+        <svg view
